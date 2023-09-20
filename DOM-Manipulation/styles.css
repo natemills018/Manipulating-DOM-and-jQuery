@@ -1,0 +1,37 @@
+.alertBox {
+    height: 100px;
+    width: 400px;
+    background-color: lightcoral;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.button-styles {
+    border-radius: 3px;
+    font-size: larger;
+    border: 10px;
+    cursor: pointer;
+}
+
+#hovered {
+    height: 100px;
+    padding: 1em;
+    width: 400px;
+    background-color: lightcoral;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxMessage {
+    text-align: center;
+    justify-content: center;
+    color: black;
+    font: bolder;
+    font-size: 150%;
+    font-family: 'Courier New', Courier, monospace;
+}
