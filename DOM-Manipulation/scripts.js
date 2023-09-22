@@ -1,13 +1,3 @@
-let colors = ['blue', 'green', 'red', 'purple', 'yellow', 'orange', 'gray', 'brown'];
-
-function hoverfunction () {
-    let hoverDiv = document.getElementById('hovered');
-    let randomColor = colors[Math.floor(Math.random() * colors.length)];
-        hoverDiv.style.background = randomColor;
-    
-}
-
-
 document.addEventListener("DOMContentLoaded", function() {
     
     let alertButton = document.createElement('button');
@@ -35,6 +25,19 @@ document.addEventListener("DOMContentLoaded", function() {
     subButton.addEventListener("click", function(event) {
         event.preventDefault();
         output.textContent = yourSubmission.value;
+    })
+
+    let hoverBtn = document.getElementById('hovered');
+
+    let colors = ['blue', 'green', 'red', 'purple', 'yellow', 'orange', 'gray', 'brown'];
+    let randomColor = colors[Math.floor(Math.random() * colors.length)];
+
+    hoverBtn.addEventListener('mouseenter', function(){
+        hoverBtn.style.backgroundColor = 'orange';
+    })
+
+    hoverBtn.addEventListener('mouseleave', function() {
+        hoverBtn.style.backgroundColor = "lightcoral";
     })
     
 

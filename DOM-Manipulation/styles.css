@@ -1,3 +1,9 @@
+body {
+    display: block;
+    padding-left: 1em;
+}
+
+
 .alertBox {
     height: 100px;
     width: 400px;
@@ -14,6 +20,7 @@
     font-size: larger;
     border: 10px;
     cursor: pointer;
+    padding: 1em;
 }
 
 #hovered {
