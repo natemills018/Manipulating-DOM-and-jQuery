@@ -7,6 +7,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: 16em;
+    padding: auto;
 
 }
 
@@ -26,12 +28,25 @@
     border: red dashed 1em;
 }
 
+#spanText {
+    text-align: center;
+    justify-content: center;
+    color: black;
+    font: bolder;
+    font-size: 150%;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+
 .button-styles {
     border-radius: 3px;
     margin-top: 5em;
     margin-bottom: 5em;
+    margin-left: 16em;
     font-size: larger;
     border: 10px;
+    padding-left: 10em;
+    position: static;
     cursor: pointer;
     padding: 1em;
 }

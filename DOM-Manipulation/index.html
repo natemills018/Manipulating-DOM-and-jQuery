@@ -6,30 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM Manipulation</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
 </head>
 
-<body>
+<body class="bg-dark-subtle">
     
-    <form action="">
-        <button id="submissionButton">Click here to Submit</button>
+        <div class="p-5 mb-4 bg-body-tertiary rounded-3">
+            <div class="container-fluid bg-primary py-5 text-white">
+                <div class="row pl-4">
+                    <div>
+                        <h1 class="display-5 font-weight-bold">Nathaniel Mills</h1>
+                        <h4>Junior Full Stack Developer</h4>
 
-        <input type="text" id="yourSubmission" placeholder="Or don't" maxlength="10">
+                    </div>
+                </div>
+            </div>
+        </div>
 
-        <h2 class="output" id="output1"></h2>
 
-    </form>
+        <form action="">
+            <button id="submissionButton">Click here to Submit</button>
 
-    <div id="hovered">You've Entered the Arena</div>
+            <input type="text" id="yourSubmission" placeholder="Or don't" maxlength="10">
 
-    <p id="colored-paragraph">This is some text that's multi-colored</p>
+            <h2 class="output" id="output1"></h2>
 
-    <button id="spanButton">Click here to add text</button>
+        </form>
 
-    <div id="emptyDiv"></div>
+        <div id="hovered">You've Entered the Arena</div>
 
-    <button id="listedButton">Add a name to the List</button>
+        <p id="colored-paragraph">This is some text that's multi-colored</p>
 
-    <ul id="friends">Here they are!</ul>
+        <button id="spanButton">Click here to add text</button>
+
+        <div id="emptyDiv"></div>
+
+        <button id="listedButton">Add a name to the List</button>
+
+        <ul id="friends">Here they are!</ul>
+    
 
     <script src="scripts.js"></script>
 </body>
