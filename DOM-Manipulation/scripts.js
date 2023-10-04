@@ -65,25 +65,32 @@ document.addEventListener("DOMContentLoaded", function () {
     })
 
 
-    let friendCount
 
     let friends = ['Nate', 'Jordan', 'Noelle', 'Nick', 'Courtney', 'Silas', 'Roux', 'Hargrave', 'Knuckles']
 
-
-
+    let friendIndex = 0;
     let listedButton = document.getElementById('listedButton');
 
     listedButton.addEventListener("click", function () {
-       
-            let list = document.getElementById('friends');
-            let names = document.createElement('li');
-            let theirNames = friends[i];
-            let friendNames = document.createTextNode(theirNames++);
-            names.appendChild(friendNames);
-            list.appendChild(names);
-           
 
-    
+
+        let list = document.getElementById('friends');
+        // This checks to see if the friend index is 10 or higher and then stops the function so we don't run out of friends
+        if (friendIndex >= friends.length) {
+            return;
+        }
+
+        let name = document.createElement('li');
+        // The id will be the text of "friend-li-" & index position of which friend we're currently on, like <li id="friend-li-5">
+        // Not fully necessary but I love descriptive IDs and it's something that you will need later on when we get to React
+        name.id = "friend-li-" + friendIndex;
+        let friendName = document.createTextNode(friends[friendIndex]);
+        name.appendChild(friendName);
+        list.appendChild(name);
+        // After each friend li is created, we'll then go ahead and bump the next index up
+        friendIndex++;
+
+
 
 
 

@@ -1,15 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Manipulating HTML with jquery</title>
 </head>
+
 <body>
+    <div id="container">
+
+        <button id="scaryButton" class="buttonsettings">Press this button to complete the first task</button>
+
+
     
+
+    <div id="responseContainer"></div>
+
+    <button id="usefulButton">Press this to add a span element</button>
+
+    <button id="horribleButton">Press this button to add friends to your list</button>
+
+    <ul id="friendsList"></ul>
+
+    <div id="submissionContainer">
+
+        <form action="">
+
+            <input type="text" id="yourResponse" placeholder="Submit your name here" maxlength="10">
+
+            <button id="scaryButtonResponse">Click this button to see your name</button>
+
+            
+
+        </form>
+
+        
+    </div>
+
+    <h2 id="outputJQ"></h2>
+
+    <div id="hoveredContainer">Hover over to change colors</div>
+
+    <p id="paragraphSelector">This is the paragraph that will change color</p>
+
+
+</div>
+
     <!-- Javascript Dependencies -->
     <script src="https://code.jquery.com/jquery-3.7.1.js"
         integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <script src="scripts.js"></script>
 </body>
+
 </html>
