@@ -59,7 +59,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
         spanElement.appendChild(spanText);
         textDiv.appendChild(spanElement);
-        document.body.appendChild(textDiv);
 
 
     })
